@@ -1,0 +1,9 @@
+spring:
+  config:
+    import: "optional:configserver:"
+  application:
+    name: application-gateway
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      #uri: http://config-service:8888/

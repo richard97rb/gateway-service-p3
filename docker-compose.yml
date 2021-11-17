@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  gateway-service:
+    image: gateway-service
+    restart: always
+    container_name: gateway-service
+    ports:
+      - '8080:8080'
+    networks:
+      - 'config-network'
+networks:
+  config-network:
+    external: true
